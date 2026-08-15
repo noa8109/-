@@ -11,19 +11,28 @@ body {
     /* VALORANT風ライン（横） */
     linear-gradient(0deg, rgba(255,255,255,0.03) 1px, transparent 1px),
 
-    /* ← 粒子模様を濃いテクスチャに変更 */
+    /* 粒子を濃くするための黒レイヤー（コントラストUP） */
+    linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+
+    /* 粒子模様（濃い） */
+    url("https://www.transparenttextures.com/patterns/black-linen.png"),
+
+    /* 粒子模様（さらに重ねて超濃く） */
     url("https://www.transparenttextures.com/patterns/black-linen.png");
 
   background-size:
     auto,
     40px 40px,
     40px 40px,
+    auto,
+    auto,
     auto;
 
   text-align: center;
   color: #fff;
   font-family: 'Rajdhani', sans-serif;
 }
+
 
 
 
