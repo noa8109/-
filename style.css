@@ -52,16 +52,38 @@ body {
   background: #ff6b7a;
 }
 .gallery {
-  display: inline-block;
-  padding: 25px;
-  border-radius: 16px;
+  position: relative;
+  padding: 30px;
+  border-radius: 20px;
 
-  /* ガラス風パネル */
-  background: rgba(255,255,255,0.08);
-  backdrop-filter: blur(10px);
+  /* ギャラリー背景の青いグラデーション */
+  background: linear-gradient(
+    135deg,
+    rgba(0,120,255,0.15),
+    rgba(0,0,0,0.6)
+  );
 
-  /* 氷の青に合う光 */
-  box-shadow: 0 0 30px rgba(0,150,255,0.3);
+  /* ギャラリー全体の光 */
+  box-shadow:
+    0 0 40px rgba(0,150,255,0.4),
+    0 0 80px rgba(0,150,255,0.2);
+}
 
-  margin-top: 40px;
+.gallery::before {
+  content: "";
+  position: absolute;
+  top: -60px;
+  left: -60px;
+  right: -60px;
+  bottom: -60px;
+  border-radius: 30px;
+
+  /* 青い光のリング */
+  background: radial-gradient(
+    circle,
+    rgba(0,150,255,0.25),
+    transparent 70%
+  );
+
+  z-index: -1;
 }
