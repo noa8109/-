@@ -51,7 +51,7 @@ body {
 .buttons button:hover {
   background: #ff6b7a;
 }
-.gallery {
+#gallery {
   position: relative;
   padding: 30px;
   border-radius: 20px;
@@ -69,7 +69,7 @@ body {
     0 0 80px rgba(0,150,255,0.2);
 }
 
-.gallery::before {
+#gallery::before {
   content: "";
   position: absolute;
   top: -60px;
@@ -87,3 +87,4 @@ body {
 
   z-index: -1;
 }
+
