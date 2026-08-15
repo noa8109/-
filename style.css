@@ -9,7 +9,6 @@ body {
   width: 90%;     /* ← 画面幅の90%にする */
   max-width: 800px; /* ← PCでは最大800pxまで */
   height: auto;   /* ← 縦は自動調整 */
-}
   object-fit: cover;
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(255, 70, 85, 0.6);
