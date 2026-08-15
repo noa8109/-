@@ -21,7 +21,6 @@ body {
     40px 40px,   /* 横ライン */
     auto;        /* 粒子 */
   text-align: center;
-  background: #111;
   color: #fff;
   font-family: 'Rajdhani', sans-serif;
 }
