@@ -1,4 +1,25 @@
 body {
+  background-color: #000;
+  /* 模様を重ねる順番（上から順に重ねる） */
+  background-image:
+    /* 冷気の青い光（幻想的） */
+    radial-gradient(circle at center, rgba(0,150,255,0.15), transparent 70%),
+
+    /* VALORANT風の縦ライン */
+    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px),
+
+    /* VALORANT風の横ライン */
+    linear-gradient(0deg, rgba(255,255,255,0.03) 1px, transparent 1px),
+
+    /* 黒背景の質感（粒子） */
+    url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+
+  /* ライン模様のサイズ */
+  background-size:
+    auto,        /* 冷気 */
+    40px 40px,   /* 縦ライン */
+    40px 40px,   /* 横ライン */
+    auto;        /* 粒子 */
   text-align: center;
   background: #111;
   color: #fff;
